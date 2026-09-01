@@ -157,6 +157,36 @@ section h2.section-title {
   height: 280px;
 }
 
+.heatmap-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.legend-bar {
+  flex: 1;
+  max-width: 200px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    rgba(37, 99, 235, 0.85),
+    rgba(37, 99, 235, 0.15) 45%,
+    transparent 50%,
+    rgba(220, 38, 38, 0.15) 55%,
+    rgba(220, 38, 38, 0.85)
+  );
+}
+
 table.heatmap {
   border-collapse: collapse;
   width: 100%;
