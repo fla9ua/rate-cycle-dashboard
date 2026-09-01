@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>金利サイクルダッシュボード | 日本・米国の政策金利フェーズ</title>
+  <meta name="description" content="日本と米国の政策金利・CPI・セクター相関を一目で把握できるダッシュボード。情報提供目的であり投資助言ではありません。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-header">
+      <h1>金利サイクルダッシュボード</h1>
+      <p>日本と米国の政策金利の現在地を一目で把握する</p>
+      <p class="updated-at" id="generated-at"></p>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab-btn active" data-region="jp">🇯🇵 日本</button>
+      <button class="tab-btn" data-region="us">🇺🇸 米国</button>
+    </nav>
+
+    <section class="region-panel" id="panel-jp">
+      <div class="card-grid">
+        <div class="card card-policy-rate">
+          <h2>政策金利</h2>
+          <div class="value">—</div>
+          <span class="badge hold">—</span>
+          <div class="sub"></div>
+        </div>
+        <div class="card card-cpi">
+          <h2>CPI（消費者物価指数）</h2>
+          <div class="value">—</div>
+          <div class="sub"></div>
+        </div>
+      </div>
+
+      <section class="chart-section">
+        <h2 class="section-title">政策金利の推移</h2>
+        <div class="chart-wrap">
+          <canvas id="chart-jp"></canvas>
+        </div>
+      </section>
+
+      <section class="heatmap-section">
+        <h2 class="section-title">セクター × 金利/債券/金 相関ヒートマップ</h2>
+        <div class="table-scroll">
+          <div class="heatmap-container"></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="region-panel" id="panel-us" hidden>
+      <div class="card-grid">
+        <div class="card card-policy-rate">
+          <h2>政策金利（FF金利誘導目標上限）</h2>
+          <div class="value">—</div>
+          <span class="badge hold">—</span>
+          <div class="sub"></div>
+        </div>
+        <div class="card card-cpi">
+          <h2>コアCPI</h2>
+          <div class="value">—</div>
+          <div class="sub"></div>
+        </div>
+      </div>
+
+      <section class="chart-section">
+        <h2 class="section-title">政策金利の推移</h2>
+        <div class="chart-wrap">
+          <canvas id="chart-us"></canvas>
+        </div>
+      </section>
+
+      <section class="heatmap-section">
+        <h2 class="section-title">セクター × 金利/債券/金 相関ヒートマップ</h2>
+        <div class="table-scroll">
+          <div class="heatmap-container"></div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="disclaimer">
+      <p id="disclaimer-text"></p>
+      <p>データソース: 日本銀行 時系列統計データ検索サイト、FRED (Federal Reserve Bank of St. Louis)、総務省統計局 e-Stat、J-Quants、Yahoo Finance</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "rate-cycle-dashboard",
+  "version": "1.0.0",
+  "description": "日本と米国の金利サイクルの現在地を一目で把握できるダッシュボード",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch.js",
+    "backfill": "node scripts/backfill.js",
+    "compute": "node scripts/compute.js",
+    "update": "npm run fetch && npm run compute"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
