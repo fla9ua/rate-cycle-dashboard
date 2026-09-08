@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-07T05:06:00.444Z",
+  "generatedAt": "2026-09-08T05:03:27.827Z",
   "regions": {
     "jp": {
       "policyRate": {
-        "current": 0.978,
-        "currentDate": "2026-09-03",
+        "current": 0.977,
+        "currentDate": "2026-09-04",
         "phase": "利上げ局面",
         "lastChange": {
           "date": "2026-06-17",
@@ -12,7 +12,7 @@
           "to": 1,
           "direction": "up"
         },
-        "sinceLastChangeDays": 82,
+        "sinceLastChangeDays": 83,
         "series": [
           {
             "date": "2025-09-01",
@@ -997,6 +997,10 @@
           {
             "date": "2026-09-03",
             "value": 0.978
+          },
+          {
+            "date": "2026-09-04",
+            "value": 0.977
           }
         ]
       },
@@ -3213,6 +3217,10 @@
       {
         "date": "2026-09-07",
         "value": 4476.60009765625
+      },
+      {
+        "date": "2026-09-08",
+        "value": 4480.10009765625
       }
     ]
   },
