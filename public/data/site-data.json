@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T07:18:31.892Z",
+  "generatedAt": "2026-11-23T08:01:49.481Z",
   "regions": {
     "jp": {
       "policyRate": {
@@ -12,7 +12,7 @@
           "to": 1.25,
           "direction": "up"
         },
-        "sinceLastChangeDays": 59,
+        "sinceLastChangeDays": 60,
         "series": [
           {
             "date": "2025-09-01",
@@ -3841,6 +3841,10 @@
       {
         "date": "2026-11-20",
         "value": 3515.39990234375
+      },
+      {
+        "date": "2026-11-23",
+        "value": 3624.199951171875
       }
     ]
   },
